@@ -353,7 +353,7 @@ h6 {
 .about .skill-bars li:nth-child(2) span { right: 5%; }
 .about .skill-bars li:nth-child(3) span { right: 20.2%; }
 .about .skill-bars li:nth-child(4) span { right: 25.2%; }
-.about .skill-bars li:nth-child(5) span { right: 35.2%; }
+.about .skill-bars li:nth-child(5) span { right: 25.2%; }
 
 @media only screen and (max-width: 992px) {
 	.about .about-content .skills {
@@ -364,7 +364,7 @@ h6 {
 	.about .skill-bars li:nth-child(2) span { right: 7.6%; }
 	.about .skill-bars li:nth-child(3) span { right: 22.7%; }
 	.about .skill-bars li:nth-child(4) span { right: 27.7%; }
-	.about .skill-bars li:nth-child(5) span { right: 37.7%; }
+	.about .skill-bars li:nth-child(5) span { right: 27.7%; }
 }
 @media only screen and (max-width: 768px) {
 	.about .intro-info {
@@ -402,7 +402,7 @@ h6 {
 	.about .skill-bars li:nth-child(2) span { right: 7%; }
 	.about .skill-bars li:nth-child(3) span { right: 22%; }
 	.about .skill-bars li:nth-child(4) span { right: 27%; }
-	.about .skill-bars li:nth-child(5) span { right: 37%; }
+	.about .skill-bars li:nth-child(5) span { right: 27%; }
 
 	.about .about-button-section .col-12 {
 		display: flex;
