@@ -27,7 +27,7 @@
     <img src="assets/images/icons/Facebook.png" alt="Facebook" height="40" style="vertical-align:top; margin:4px 8px; border-radius:5px;">
   </a>
   <a href="https://join.skype.com/invite/yG4BKspBLdT1" style="text-decoration: none;">
-    <img src="assets/images/icons/Skype.png" alt="Skype" height="40" style="vertical-align:top; margin:20px">
+    <img src="assets/images/icons/Skype.png" alt="Skype" height="40" style="vertical-align:top; margin:4px 8px">
   </a>
 </p>
 <p style="margin-top:-10px">
