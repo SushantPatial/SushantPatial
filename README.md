@@ -1,6 +1,6 @@
 # <div align="center">Hey there I'm Sushant 👋</div>
 
-### <div style="text-align: center">A Web Developer 💻</div>
+### <div align="center">A Web Developer 💻</div>
 
 
 ## About me
