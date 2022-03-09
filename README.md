@@ -2,8 +2,6 @@
 
 ### <div align="center">A Web Developer 💻</div>
 
-![Sushant's Profile Visits](https://komarev.com/ghpvc/?username=SushantPatial)
-
 ## About me
 - 👨🏽‍💻 I’m currently an IT Undergrad student at ADGITM, GGSIPU.
 - 🌱 I'm currently exploring Web Development and Java.
@@ -91,6 +89,9 @@
 
 <hr>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=SushantPatial">
+</p>
 <p align="center">
   <kbd><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SushantPatial&theme=tokyonight"></kbd>
 </p>
