@@ -24,7 +24,7 @@
     <img src="assets/images/icons/Twitter.png" alt="Twitter" height="40" style="">
   </a>&nbsp;
   <a href="https://www.facebook.com/sushant.patial.77/" style="text-decoration: none;">
-    <img src="assets/images/icons/Facebook.png" alt="Facebook" height="40" style="; border-radius:5px;">
+    <img src="assets/images/icons/Facebook.png" alt="Facebook" height="40" style="border-radius:5px;">
   </a>&nbsp;
   <a href="https://join.skype.com/invite/yG4BKspBLdT1" style="text-decoration: none;">
     <img src="assets/images/icons/Skype.png" alt="Skype" height="40" style="">
@@ -38,10 +38,10 @@
     <img src="assets/images/icons/Leetcode.png" alt="Leetcode" height="40" style="">
   </a>&nbsp;
   <a href="https://www.codechef.com/users/sushantpatial" style="text-decoration: none;">
-    <img src="assets/images/icons/Codechef.png" alt="Codechef" height="40" style="; border-radius:5px;">
+    <img src="assets/images/icons/Codechef.png" alt="Codechef" height="40" style="border-radius:5px;">
   </a>&nbsp;
   <a href="https://www.hackerrank.com/sushantpatial18" style="text-decoration: none;">
-    <img src="assets/images/icons/Hackerrank.png" alt="Hackerrank" height="40" style="; border-radius:5px;">
+    <img src="assets/images/icons/Hackerrank.png" alt="Hackerrank" height="40" style="border-radius:5px;">
   </a>&nbsp;
   <a href="https://www.hackerearth.com/@sushantpatial18" style="text-decoration: none;">
     <img src="assets/images/icons/Hackerearth.png" alt="Hackerearth" height="40" style="">
