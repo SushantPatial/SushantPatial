@@ -56,12 +56,12 @@
   <img src="assets/images/icons/Python.png" alt="Python" height="40" style="vertical-align:top; margin:4px 8px">
 </p>
 <p style="margin-top:-5px">
-  <img src="assets/images/icons/HTML.png" alt="HTML" height="40" style="vertical-align:top; padding:4px 8px">
-  <img src="assets/images/icons/CSS.png" alt="CSS" height="40" style="vertical-align:top; padding:4px 8px">
-  <img src="assets/images/icons/JavaScript.png" alt="JavaScript" height="40" style="vertical-align:top; padding:4px 8px">
-  <img src="assets/images/icons/PHP.png" alt="PHP" height="40" style="vertical-align:top; padding:4px 8px">
-  <img src="assets/images/icons/RESTAPI.png" alt="RESTAPI" height="40" style="vertical-align:top; padding:4px 8px">
-  <img src="assets/images/icons/WordPress.png" alt="WordPress" height="40" style="vertical-align:top; padding:4px 8px">
+  <img src="assets/images/icons/HTML.png" alt="HTML" height="40" style="vertical-align:top; margin:4px 8px">
+  <img src="assets/images/icons/CSS.png" alt="CSS" height="40" style="vertical-align:top; margin:4px 8px">
+  <img src="assets/images/icons/JavaScript.png" alt="JavaScript" height="40" style="vertical-align:top; margin:4px 8px">
+  <img src="assets/images/icons/PHP.png" alt="PHP" height="40" style="vertical-align:top; margin:4px 8px">
+  <img src="assets/images/icons/RESTAPI.png" alt="RESTAPI" height="40" style="vertical-align:top; margin:4px 8px">
+  <img src="assets/images/icons/WordPress.png" alt="WordPress" height="40" style="vertical-align:top; margin:4px 8px">
 </p>
 <p style="margin-top:-5px">
   <img src="assets/images/icons/Node.png" alt="NodeJS" height="40" style="vertical-align:top; margin:4px 8px">
