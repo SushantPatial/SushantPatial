@@ -2,7 +2,7 @@
 
 ### <div align="center">A Web Developer 💻</div>
 
-<br>
+<br/>
 ## About me
 - 👨🏽‍💻 I’m currently an IT Undergrad student at ADGITM, GGSIPU.
 - 🌱 I'm currently exploring Web Development and Java.
