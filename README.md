@@ -12,7 +12,6 @@
 - 📫 Email me at: sushantpatial18@gmail.com
 - ⚡ Fun fact: I love cooking!
 
-\
 ## Connect with me
 <p style="margin-top:-10px">
   <a href="https://www.linkedin.com/in/sushant-patial-2895a7204/" style="text-decoration: none;">
@@ -49,7 +48,6 @@
   </a>&nbsp;
 </p>
 
-\
 ## Languages / Frameworks / Tools
 <p style="margin-top:-10px">
   <img src="assets/images/icons/Java.png" alt="Java" height="40" style="">&nbsp;
