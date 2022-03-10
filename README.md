@@ -96,8 +96,8 @@
   <kbd><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SushantPatial&theme=tokyonight"></kbd>
 </p>
 <p align="center">
-  <kbd><img src="https://github-readme-stats.vercel.app/api?username=SushantPatial&theme=tokyonight&show_icons=true"></kbd>
+  <kbd><img src="https://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1&theme=tokyonight"></kbd>
 </p>
 <p align="center">
-  <kbd><img src="https://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1&theme=tokyonight"></kbd>
+  <kbd><img src="https://github-readme-stats.vercel.app/api?username=SushantPatial&theme=tokyonight&show_icons=true"></kbd>
 </p>
