@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="favicon.png">
 
     <!--===== Google Fonts =====-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!--===== AOS =====-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -28,7 +28,28 @@
   <body>
 
     <!--===== Navbar =====-->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="nav-wrapper">
+      <div class="nav-box">
+        <div class="hamburger">
+          <div class="hamburger-icon">
+            <span class="bar top-bar"></span>
+            <span class="bar middle-bar"></span>
+            <span class="bar bottom-bar"></span>
+          </div>
+        </div>
+        <div class="menu-wrapper">
+          <ul class="menu">
+            <li class="home active"><a href="#home">Home</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="resume"><a href="#resume">Resume</a></li>
+            <li class="projects"><a href="#projects">Projects</a></li>
+            <li class="skills"><a href="#skills">Skills</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-lg fixed-top">
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
@@ -45,25 +66,24 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <!--===== Home =====-->
-    <header id="home">
+    <section id="home">
       <div id="particles-js">
         <div class="banner-text">
           <h1 data-aos="fade-in" data-aos-duration="1000">I'm Sushant Patial</h1>
           <p><span id="typed"></span></p>
           <hr />
           <ul class="social">
-            <li data-aos="zoom-in" data-aos-duration="1000"><a href="https://www.facebook.com/sushant.patial.77/"><i class="fab fa-facebook-f"></i></a></li>
-            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50"><a href="https://twitter.com/SushantPatial1"><i class="fab fa-twitter"></i></a></li>
-            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://www.linkedin.com/in/sushant-patial-2895a7204/"><i class="fab fa-linkedin"></i></a></li>
-            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150"><a href="https://www.instagram.com/sushant_patial/"><i class="fab fa-instagram"></i></a></li>
-            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"><a href="https://join.skype.com/invite/yG4BKspBLdT1"><i class="fab fa-skype"></i></a></li>
+            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50"><a href="https://www.linkedin.com/in/sushant-patial-2895a7204/"><i class="fab fa-linkedin"></i></a></li>
+            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"><a href="https://www.instagram.com/sushant_patial/"><i class="fab fa-instagram"></i></a></li>
+            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150"><a href="https://twitter.com/SushantPatial1"><i class="fab fa-twitter"></i></a></li>
+            <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"><a href="https://github.com/SushantPatial"><i class="fab fa-github"></i></a></li>
           </ul>
         </div>
       </div>
-    </header>
+    </section>
       
     <!--===== About =====-->
     <section id="about" class="about white-section">  
@@ -76,8 +96,16 @@
       </div>
  
       <div class="intro-info">
-        <img data-aos="fade-right" data-aos-duration="700" src="assets/images/SushantPatial.jpg" alt="Profile Picture">
-        <p data-aos="fade-left" data-aos-duration="700" class="lead">A Full Stack Web Developer based in Delhi, India. I'm passionate about web development and love to code beautiful and attractive things. I'm always ready to challenge myself and explore new areas of work.</p>
+        <div data-aos="fade-in" data-aos-duration="0" data-aos-delay="700" id="profile-socials" class="profile-socials">
+          <a href="https://www.linkedin.com/in/sushant-patial-2895a7204/"><img src="assets/images/icons/Profile Linkedin.png"></a>
+          <a href="https://www.instagram.com/sushant_patial/"><img src="assets/images/icons/Profile Instagram.png"></a>
+          <a href="https://twitter.com/SushantPatial1"><img src="assets/images/icons/Profile Twitter.png"></a>
+          <a href="https://github.com/SushantPatial"><img src="assets/images/icons/Profile Github.png"></a>
+        </div>
+        <div class="intro-info-wrapper">
+          <img data-aos="fade-right" data-aos-duration="700" src="assets/images/SushantPatial.jpg" alt="Profile Picture">
+          <p data-aos="fade-left" data-aos-duration="700" class="lead">A Full Stack Web Developer based in Delhi, India. I'm passionate about web development and love to code beautiful and attractive things. I'm always ready to challenge myself and explore new areas of work.</p>
+        </div>
       </div>   			
        
       <div class="about-content">
@@ -95,36 +123,60 @@
             <p>+91 8744011165</p>
             <h6>Location:</h6>
             <p>Delhi, India</p>
+            <h6>Coding Profiles:</h6>
+            <div class="coding-profiles">
+              <a href="https://auth.geeksforgeeks.org/user/sushantpatial18/profile"><img src="assets/images/icons/Leetcode Black.png"></a>
+              <a href="https://leetcode.com/SushantPatial/"><img src="assets/images/icons/Hackerrank.png"></a>
+              <a href="https://www.codechef.com/users/sushantpatial"><img src="assets/images/icons/Codechef.png"></a>
+              <a href="https://www.hackerrank.com/sushantpatial18?hr_r=1"><img src="assets/images/icons/GFG.png"></a>
+            </div>
           </div>
 
-          <div class="col-lg-6 skills" data-aos="fade-left" data-aos-duration="700">
+          <div id="skillset" class="col-lg-6 skills" data-aos="fade-left" data-aos-duration="700">
             <h3>Skills</h3>
 
             <ul class="skill-bars">
               <li>
-                <div class="progress percent90"></div>
+                <div class="progress"></div>
+                <strong>Java</strong>
+                <div class="counter">
+                  <div class="counting" data-count="75">0%</div>
+                </div>
+              </li>
+              <li>
+                <div class="progress"></div>
                 <strong>HTML5 / CSS3</strong>
-                <span>90%</span>
+                <div class="counter">
+                  <div class="counting" data-count="95">0%</div>
+                </div>
               </li>
               <li>
-                <div class="progress percent90"></div>
-                <strong>Bootstrap</strong>
-                <span>90%</span>
-              </li>
-              <li>
-                <div class="progress percent75"></div>
-                <strong>JavaScript / JQuery</strong>
-                <span>75%</span>
-              </li>
-              <li>
-                <div class="progress percent70"></div>
+                <div class="progress"></div>
                 <strong>MERN Stack</strong>
-                <span>70%</span>
+                <div class="counter">
+                  <div class="counting" data-count="80">0%</div>
+                </div>
               </li>
               <li>
-                <div class="progress percent70"></div>
-                <strong>PHP</strong>
-                <span>70%</span>
+                <div class="progress"></div>
+                <strong>PHP / MySQL</strong>
+                <div class="counter">
+                  <div class="counting" data-count="75">0%</div>
+                </div>
+              </li>
+              <li>
+                <div class="progress"></div>
+                <strong>JavaScript / JQuery</strong>
+                <div class="counter">
+                  <div class="counting" data-count="85">0%</div>
+                </div>
+              </li>
+              <li>
+                <div class="progress"></div>
+                <strong>Photoshop / Figma</strong>
+                <div class="counter">
+                  <div class="counting" data-count="75">0%</div>
+                </div>
               </li>
            </ul>
           </div>
@@ -157,7 +209,7 @@
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Bachelor of Technology - Information Technology</h4>
-              <h5>August 2019 - July 2023</h5>
+              <h5>August 2019 - Present</h5>
               <p><em>Dr. Akhilesh Das Gupta Institute of Technology and Management</em></p>
             </div>
             <div class="resume-item" style="padding-bottom: 0; margin-bottom: 30px;">
@@ -190,10 +242,6 @@
               <h4>Hacktoberfest 2021</h4>
               <h5>October 2021</h5>
             </div>
-            <div class="resume-item" style="padding-bottom: 0; margin-bottom: 30px; height: 15px;">
-              <h4>HackerRank - 5 Star Java</h4>
-            </div>
-
           </div>
 
 
@@ -201,7 +249,7 @@
             <h3 class="resume-title">Experience</h3>
             <div class="resume-item">
               <h4>Web Development Intern</h4>
-              <h5>October 2021 - Present</h5>
+              <h5>October 2021 - March 2022</h5>
               <p><em>Eazy Business Solutions, Haryana, India</em></p>
               <ul>
                 <li>Responsible for full stack development of end-to-end responsive web applications.</li>
@@ -533,7 +581,7 @@
     </section>
 
     <!--===== Contact =====-->
-    <footer id="contact" class="contact">  
+    <section id="contact" class="contact">  
       <div class="container">
 
         <div class="row section-intro" data-aos="zoom-in" data-aos-duration="700">
@@ -609,7 +657,7 @@
       <div class="footer-bottom">
         <h6>Copyright © <span id="year"></span> Sushant Patial</h6>
       </div>
-    </footer>
+    </section>
     
 
     <!-- to top button --> 

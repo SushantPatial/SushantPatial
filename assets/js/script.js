@@ -12,20 +12,39 @@ AOS.init({
   loop : true
 });
 
-/* Navbar scrolled */
-$(window).scroll(function() {
-  if ($(window).width() > 992) {
-    if ($(window).scrollTop() > 200) {
-      $(".navbar").addClass("navbar-scrolled");
-    }
-    else {
-      $(".navbar").removeClass("navbar-scrolled");
-    }
-  }
+/* Navbar hamburger menu open */
+$('.hamburger').on('click', function() {
+  $('.hamburger').toggleClass('active');
+  $('.menu-wrapper').toggleClass('visible');
+  $('.menu').toggleClass('menu-active');
 });
 
+$(".menu li a").on('click', function() {
+  $('.hamburger').removeClass('active');
+  $('.menu-wrapper').removeClass('visible');
+  $('.menu').removeClass('menu-active');
+})
 
-/* Navbar links active state on scroll */
+/* Navbar scrolled */
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".nav-wrapper .menu-wrapper ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop - 60) {
+      current = section.getAttribute("id"); 
+    }
+  });
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+
 const select = (el, all = false) => {
   el = el.trim()
   if (all) {
@@ -35,30 +54,66 @@ const select = (el, all = false) => {
   }
 }
 
-const onscroll = (el, listener) => {
-  el.addEventListener('scroll', listener)
-}
-
-let navbarlinks = select('#navbar .nav-link', true)
-const navbarlinksActive = () => {
-  let position = window.scrollY + 60
-  navbarlinks.forEach(navbarlink => {
-    if (!navbarlink.hash) return
-    let section = select(navbarlink.hash)
-    if (!section) return
-    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-      navbarlink.classList.add('current')
-    } else {
-      navbarlink.classList.remove('current')
-    }
-  })
-}
-
-window.addEventListener('load', navbarlinksActive)
-onscroll(document, navbarlinksActive)
 
 /* Hero Particles */
 particlesJS("particles-js",{particles:{number:{value:100,density:{enable:!0,value_area:1e3}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:.5,random:!0,anim:{enable:!1,speed:1,opacity_min:.1,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:40,size_min:.1,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:2,direction:"none",random:!1,straight:!1,out_mode:"out",attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"repulse"},onclick:{enable:!1,mode:"push"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:3},repulse:{distance:200},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!0,config_demo:{hide_card:!1,background_image:"../images/hero-bg.jpg",background_position:"50% 50%",background_repeat:"no-repeat",background_size:"cover"}});
+
+/* Profile socials */
+// $('#profile-img').on('mouseenter', function() {
+//   $("#profile-socials").addClass('active');
+// })
+// $('#profile-img').on('mouseleave', function() {
+//   $("#profile-socials").removeClass('active');
+// })
+
+/* Progress */
+// Detect scroll to div
+let isSetOnce = false;
+$(window).on('load', function() {
+  if (!isSetOnce && $(window).scrollTop() > $('#skillset').offset().top - 600) {
+    isSetOnce = true;
+    $('#skillset .skill-bars').addClass('active');
+
+    $('.counting').each(function() {
+      var $this = $(this), countTo = $this.attr('data-count');
+      $({ countNum: $this.text()}).animate({
+        countNum: countTo
+      }, {
+        duration: 2700,
+        easing:'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum) + "%");
+        },
+        complete: function() {
+          $this.text(this.countNum + "%");
+        }
+      });  
+    });  
+  }
+});
+
+$(window).on('scroll', function() {
+  if (!isSetOnce && $(window).scrollTop() > $('#skillset').offset().top - 600) {
+    isSetOnce = true;
+    $('#skillset .skill-bars').addClass('active');
+
+    $('.counting').each(function() {
+      var $this = $(this), countTo = $this.attr('data-count');
+      $({ countNum: $this.text()}).animate({
+        countNum: countTo
+      }, {
+        duration: 2700,
+        easing:'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum) + "%");
+        },
+        complete: function() {
+          $this.text(this.countNum + "%");
+        }
+      });  
+    });  
+  }
+});
 
 /* Projects */
 $(function() {
