@@ -347,7 +347,8 @@ h6 {
 
 /*===== About =====*/
 .about {
-	padding: 60px 0;
+	padding-top: 60px;
+	margin-bottom: -60px;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
@@ -591,35 +592,103 @@ h6 {
   100% { width: 100%; }
 }
 
-.about .about-button-section button {
-  width: 260px;
+
+
+.about .about-button-section .blob-btn {
+	z-index: 1;
+	position: relative;
+	background-color: transparent;
+	margin: 20px 20px 0 20px;
+	text-align: center;
+	outline: none;
+	border: none;
+	width: 260px;
   height: 55px;
-  margin: 20px 20px 0 20px;
-  font-family: 'Poppins';
-  font-size: 14px;
+  cursor: pointer;
+}
+.about .about-button-section .blob-btn:nth-child(3) {
+	background-color: #333;
+}
+.about .about-button-section .blob-btn a {
+	font-family: 'Poppins';
+	font-size: 14px;
   letter-spacing: 4px;
   font-weight: 900;
   text-transform: uppercase;
-  border: 3px solid #333;
-  color: #333;
-  cursor: pointer;
+	color: #333;
+	text-decoration: none;
+	transition: 0.5s;
 }
-.about .about-button-section .btn1 {
+.about .about-button-section .blob-btn:nth-child(3) a {
+	color: #fff;
+}
+.about .about-button-section .blob-btn:before {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #333;
+	transition: 0.5s;
+}
+.about .about-button-section .blob-btn:hover:before {
+	border-color: var(--secondary);
+}
+.about .about-button-section .blob-btn:hover a {
+	color: #fff;
+}
+.about .about-button-section .blob-btn:nth-child(3):hover a {
+	color: var(--secondary);
+}
+
+.blob-btn__inner {
+	z-index: -1;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.blob-btn__blobs {
+	position: relative;
+	display: block;
+	height: 100%;
+	filter: url('#goo');
+}
+.blob-btn__blob {
+	position: absolute;
+	top: 6px;
+	width: 25%;
+	height: 100%;
+	background: var(--secondary);
+	border-radius: 100%;
+	transform: translate3d(0, 150%, 0) scale(1.7);
+	transition: transform 0.45s;
+}
+.about .about-button-section .blob-btn:nth-child(3) .blob-btn__blob {
 	background-color: #fff;
-  transition: 0.2s ease;
 }
-.about .about-button-section .btn1:hover {
-  border: 3px solid var(--secondary);
-  color: var(--secondary);
+.blob-btn__blob:nth-child(1) {
+	left: 0%;
+	transition-delay: 0s;
 }
-.about .about-button-section .btn2 {
-  transition: 0.5s ease;
-  background-color: #333;
-  color: white;
+.blob-btn__blob:nth-child(2) {
+	left: 30%;
+	transition-delay: 0.08s;
 }
-.about .about-button-section .btn2:hover {
-  border: 3px solid var(--secondary);
-  background-color: var(--secondary);
+.blob-btn__blob:nth-child(3) {
+	left: 60%;
+	transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+	left: 90%;
+	transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+	transform: translateZ(0) scale(1.7);
 }
 
 
@@ -718,6 +787,11 @@ h6 {
 		top: 27px;
 		left: 275px;
 	}
+
+	.about .about-button-section {
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 /*===== Resume =====*/
@@ -814,7 +888,7 @@ h6 {
 }
 .projects .row li a .thumb-hover {
 	position: absolute;
-	background: rgba(8, 8, 8, 0.7);
+	background: rgba(8, 8, 8, 0.8);
 	font-size: 20px;
 	width: 100%;
 	height: 100%;
@@ -824,11 +898,17 @@ h6 {
 	flex-direction: column;
 }
 .projects .row li a .thumb-hover h6 {
-	color: #ccc;
+	color: #ddd;
+	margin-bottom: 10px;
+}
+.projects .row li a .thumb-hover h5 {
+	color: #aaa;
+	font-size: 14px;
 	margin-bottom: 25px;
+	text-align: center;
 }
 .projects .row li a .thumb-hover i {
-	color: #bbb;
+	color: #ccc;
 }
 
 /*===== Skills =====*/
