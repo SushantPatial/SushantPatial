@@ -129,7 +129,7 @@ h6 {
 
 .hamburger.active .hamburger-icon {
   z-index: 2;
-  animation: 0.5s rotateHamburger linear 0s forwards;
+  animation: 0.25s rotateHamburger linear 0s forwards;
 }
 .hamburger.active .hamburger-icon .bar {
   background: #fff;
