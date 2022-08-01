@@ -25,9 +25,6 @@
   <a href="https://www.facebook.com/sushant.patial.77/" style="text-decoration: none;">
     <img src="assets/images/icons/Facebook.png" alt="Facebook" height="40" style="border-radius:5px;">
   </a>&nbsp;
-  <a href="https://join.skype.com/invite/yG4BKspBLdT1" style="text-decoration: none;">
-    <img src="assets/images/icons/Skype.png" alt="Skype" height="40" style="">
-  </a>&nbsp;
 </p>
 <p align="center" style="margin-top:-10px">
   <a href="https://auth.geeksforgeeks.org/user/sushantpatial18/profile" style="text-decoration: none;">
