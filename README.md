@@ -1,6 +1,6 @@
 # <div align="center">Hey there, I'm Sushant Patial 👋</div>
 
-### <div align="center">A Web Developer 💻</div>
+### <div align="center">A Full Stack Developer 💻</div>
 
 ## About me
 - 👨🏽‍💻 I’m currently an IT Undergrad student at ADGITM, GGSIPU.
