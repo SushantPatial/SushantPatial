@@ -1,16 +1,30 @@
+$(window).on('load', function () {
+  $('html').css({ 'overflow-y': 'scroll' });
+  $('#loader').css({ 'right': '-150%' });
+  $('#loader-extra-1').css({ 'right': '-150%' });
+  $('#loader-extra-2').css({ 'right': '-150%' });
+
+  setTimeout(function() {
+    new Typed('#typed',{
+      strings : ['A Web Developer','An Engineering Student', 'An Open Source Enthusiast'],
+      typeSpeed : 100,
+      backSpeed: 50,
+      delaySpeed : 90,
+      loop : true
+    });
+  }, 1000)
+});
+
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
+
 /* AOS */
 AOS.init({
   once: true
-})
+});
 
 /* Hero type effect */
- new Typed('#typed',{
-  strings : ['A Web Developer','An Engineering Student', 'An Open Source Enthusiast'],
-  typeSpeed : 100,
-  backSpeed: 50,
-  delaySpeed : 90,
-  loop : true
-});
 
 /* Navbar hamburger menu open */
 $('.hamburger').on('click', function() {
