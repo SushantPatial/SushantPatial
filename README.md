@@ -1,6 +1,6 @@
-# <div align="center">Hey there I'm Sushant 👋</div>
+# <div align="center">Hey there, I'm Sushant Patial 👋</div>
 
-### <div align="center">A Web Developer 💻</div>
+### <div align="center">A Full Stack Developer 💻</div>
 
 ## About me
 - 👨🏽‍💻 I’m currently an IT Undergrad student at ADGITM, GGSIPU.
@@ -27,11 +27,11 @@
   </a>&nbsp;
 </p>
 <p align="center" style="margin-top:-10px">
-  <a href="https://auth.geeksforgeeks.org/user/sushantpatial18/profile" style="text-decoration: none;">
-    <img src="assets/images/icons/GFG.png" alt="GFG" height="40" style="">
-  </a>&nbsp;
   <a href="https://leetcode.com/SushantPatial/" style="text-decoration: none;">
     <img src="assets/images/icons/Leetcode.png" alt="Leetcode" height="40" style="">
+  </a>&nbsp;
+  <a href="https://auth.geeksforgeeks.org/user/sushantpatial18/profile" style="text-decoration: none;">
+    <img src="assets/images/icons/GFG.png" alt="GFG" height="40" style="">
   </a>&nbsp;
   <a href="https://www.codechef.com/users/sushantpatial" style="text-decoration: none;">
     <img src="assets/images/icons/Codechef.png" alt="Codechef" height="40" style="border-radius:5px;">
