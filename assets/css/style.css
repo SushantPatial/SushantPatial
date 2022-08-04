@@ -1,6 +1,6 @@
 /*===== General =====*/
 :root {
-  --secondary: orangered;
+  --secondary: #ff4500;
 }
 html {
 	overflow-x: hidden;
@@ -351,9 +351,7 @@ h6 {
   transform: initial;
 }
 
-
 /* Animations */
-
 @keyframes rotateHamburger {
   0% {
     transform: rotate(0);
@@ -369,7 +367,6 @@ h6 {
   }
   
   100% {
-   
     opacity: 1;
   }
 }
@@ -399,6 +396,9 @@ h6 {
 }
 .banner-text h1 {
   font-size: 75px;
+}
+.banner-text h1 span {
+	color: var(--secondary);
 }
 .banner-text p {
   color: #fff;
@@ -699,7 +699,6 @@ h6 {
   0% { width: 0; }
   100% { width: 100%; }
 }
-
 
 
 .about .about-button-section .blob-btn {
