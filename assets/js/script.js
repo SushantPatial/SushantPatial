@@ -53,7 +53,7 @@ window.onscroll = () => {
   });
   navLi.forEach((li) => {
     li.classList.remove("active");
-    if (li.classList.contains(current)) {
+    if (li.classList.contains(current + "-nav")) {
       li.classList.add("active");
     }
   });
