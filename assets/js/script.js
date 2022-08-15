@@ -7,9 +7,9 @@ $(window).on('load', function () {
   setTimeout(function() {
     new Typed('#typed',{
       strings : ['A Web Developer','An Engineering Student', 'An Open Source Enthusiast'],
-      typeSpeed : 100,
+      typeSpeed : 75,
       backSpeed: 50,
-      delaySpeed : 90,
+      delaySpeed : 500,
       loop : true
     });
   }, 1000)
@@ -198,15 +198,17 @@ function sendEmail() {
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 /* Back to top button */
-let backtotop = select('.back-to-top')
-if (backtotop) {
-  const toggleBacktotop = () => {
-    if (window.scrollY > 100) {
-      backtotop.classList.add('active')
-    } else {
-      backtotop.classList.remove('active')
-    }
+$(window).on('load', function() {
+  if ($(window).scrollTop() > 100) {
+    $('.back-to-top').addClass('active')
+  } else {
+    $('.back-to-top').removeClass('active')
   }
-  window.addEventListener('load', toggleBacktotop)
-  onscroll(document, toggleBacktotop)
-}
+});
+$(window).on('scroll', function() {
+  if ($(window).scrollTop() > 100) {
+    $('.back-to-top').addClass('active')
+  } else {
+    $('.back-to-top').removeClass('active')
+  }
+});

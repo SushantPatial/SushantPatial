@@ -267,16 +267,88 @@ h6 {
   transform: scale(1);
 }
 
-.menu {
-  position: absolute;
-  max-width: 400px;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
+.menu-wrapper .socials {
+	position: absolute;
+	z-index: 1002;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.menu-wrapper .socials a {
+	text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	opacity: 0;
+}
+.menu-wrapper .socials .social-icon {
+	width: 45px;
+	height: 45px;
+	background-color: var(--secondary);
+	color: #fff;
+	font-size: 24px;
+	margin: 5px 0;
+	position: relative;
+	z-index: 1001;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu-wrapper .socials .social-text {
+	background-color: #fff;
+	color: #111;
+	font-size: 15px;
+	height: 45px;
+	position: absolute;
+	left: -50vh;
+	z-index: 1000;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  transition: all .3s;
+}
+.menu-wrapper .socials a:hover .social-text {
+	left: 45px;
+}
+@media screen and (max-width: 800px) {
+	.menu-wrapper .socials a:hover .social-text {
+		display: none;
+	}
 }
 
+.menu-wrapper.visible .socials a:nth-child(1) {
+	animation: moveItems 0.3s linear 0.1s forwards;
+  }
+  .menu-wrapper.visible .socials a:nth-child(2) {
+	animation: moveItems 0.3s linear 0.175s forwards;
+  }
+  .menu-wrapper.visible .socials a:nth-child(3) {
+	animation: moveItems 0.3s linear 0.25s forwards;
+  }
+  .menu-wrapper.visible .socials a:nth-child(4) {
+	animation: moveItems 0.3s linear 0.325s forwards;
+  }
+  .menu-wrapper.visible .socials a:nth-child(5) {
+	animation: moveItems 0.3s linear 0.4s forwards;
+  }
+  .menu-wrapper.visible .socials a:nth-child(6) {
+	animation: moveItems 0.3s linear 0.475s forwards;
+  }
+  
+
+.menu-wrapper .menu {
+	position: absolute;
+	max-width: 400px;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+  }
+  .menu-wrapper ul {
+	  padding-left: 0;
+  }
 .menu-wrapper ul li {
   list-style: none;
 	padding: 0;
@@ -287,12 +359,12 @@ h6 {
 .menu-wrapper span, a {
   display: inline-block;
 }
-.menu-wrapper a {
+.menu-wrapper ul li a {
   text-decoration: none;
   color: #fff;
   transition: all .3s;
 }
-.menu-wrapper a:hover {
+.menu-wrapper ul li a:hover {
   color: var(--secondary);
 }
 .menu-wrapper ul li a {
@@ -319,9 +391,6 @@ h6 {
 }
 .menu.menu-active li:nth-child(5) {
   animation: moveItems 0.3s linear 0.4s forwards;
-}
-.menu.menu-active li:nth-child(6) {
-  animation: moveItems 0.3s linear 0.475s forwards;
 }
 
 .menu-item-has-children {
@@ -367,7 +436,6 @@ h6 {
   0% {
     opacity: 0;
   }
-  
   100% {
     opacity: 1;
   }
@@ -426,7 +494,7 @@ h6 {
   color: white;
   font-size: 30px;
   margin: 0 30px 0 0;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .banner-text .social a:hover {
   color: var(--secondary);
@@ -726,7 +794,7 @@ h6 {
   text-transform: uppercase;
 	color: #333;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.4s;
 }
 .about .about-button-section .blob-btn:nth-child(3) a {
 	color: #fff;
@@ -740,7 +808,7 @@ h6 {
 	width: 100%;
 	height: 100%;
 	border: 3px solid #333;
-	transition: 0.5s;
+	transition: 0.4s;
 }
 .about .about-button-section .blob-btn:hover:before {
 	border-color: var(--secondary);
@@ -775,7 +843,7 @@ h6 {
 	background: var(--secondary);
 	border-radius: 100%;
 	transform: translate3d(0, 150%, 0) scale(1.7);
-	transition: transform 0.45s;
+	transition: transform 0.35s;
 }
 .about .about-button-section .blob-btn:nth-child(3) .blob-btn__blob {
 	background-color: #fff;
@@ -904,7 +972,7 @@ h6 {
 }
 
 /*===== Resume =====*/
-.resume {
+/* .resume {
 	padding: 50px 0 60px 0;
 }
 .resume .resume-title {
@@ -965,7 +1033,7 @@ h6 {
   top: 0;
   background: #fff;
   border: 2px solid var(--secondary);
-}
+} */
 
 /*===== Projects =====*/
 .projects {
@@ -1190,7 +1258,7 @@ h6 {
 .contact .container .row .contact-detail i {
 	margin-right: 15px;
 	margin-top: 5px;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 .contact .container .row .contact-detail a {
 	color: #fff;
@@ -1216,7 +1284,7 @@ h6 {
   color: var(--secondary);
   font-size: 27px;
   margin: 0 15px 0 15px;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .contact .container .row .social a:hover {
   color: white
