@@ -626,6 +626,10 @@ h6 {
 	line-height: 22px;
 	margin-bottom: 20px;
 }
+.about .about-content p a {
+	text-decoration: none;
+	color: inherit;
+}
 .about .about-content .coding-profiles {
 	display: flex;
 	align-items: center;
@@ -723,19 +727,19 @@ h6 {
 	content: "";
 }
 .skill-bars.active li:nth-child(1) .progress, .skill-bars.active li:nth-child(1) .counter {
-	animation: load75 3s normal forwards;
+	animation: load85 3s normal forwards;
 }
 .skill-bars.active li:nth-child(2) .progress, .skill-bars.active li:nth-child(2) .counter {
 	animation: load95 3s normal forwards;
 }
 .skill-bars.active li:nth-child(3) .progress, .skill-bars.active li:nth-child(3) .counter {
-	animation: load80 3s normal forwards;
+	animation: load90 3s normal forwards;
 }
 .skill-bars.active li:nth-child(4) .progress, .skill-bars.active li:nth-child(4) .counter {
 	animation: load75 3s normal forwards;
 }
 .skill-bars.active li:nth-child(5) .progress, .skill-bars.active li:nth-child(5) .counter {
-	animation: load85 3s normal forwards;
+	animation: load90 3s normal forwards;
 }
 .skill-bars.active li:nth-child(6) .progress, .skill-bars.active li:nth-child(6) .counter {
 	animation: load75 3s normal forwards;

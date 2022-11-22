@@ -67,6 +67,7 @@
   <img src="assets/images/icons/TypeScript.png" alt="TypeScript" height="40" style="">&nbsp;
   <img src="assets/images/icons/jQuery.png" alt="jQuery" height="40" style="">&nbsp;
   <img src="assets/images/icons/Bootstrap.png" alt="Bootstrap" height="40" style="">&nbsp;
+  <img src="assets/images/icons/Tailwind.png" alt="Tailwind" height="40" style="">&nbsp;
   <img src="assets/images/icons/GSAP.png" alt="GSAP" height="40" style="">&nbsp;
   <img src="assets/images/icons/Passport.png" alt="PassportJS" height="40" style="">&nbsp;
 </p>
