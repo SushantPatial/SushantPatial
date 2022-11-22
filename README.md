@@ -7,7 +7,7 @@
 - 🌱 I'm currently exploring Web Development and Java.
 - 🤔 My interest lies in Front End Development.
 - 💬 Ask me about anything, I am happy to help.
-- 🌏 Check out my website: https://sushantpatial.github.io/SushantPatial/
+- 🌏 Check out my website: http://sushantpatial.in
 - 📫 Email me at: sushantpatial18@gmail.com
 - ⚡ Fun fact: I love cooking!
 
