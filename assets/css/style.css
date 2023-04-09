@@ -392,6 +392,9 @@ h6 {
 .menu.menu-active li:nth-child(5) {
   animation: moveItems 0.3s linear 0.4s forwards;
 }
+.menu.menu-active li:nth-child(6) {
+	animation: moveItems 0.3s linear 0.475s forwards;
+  }
 
 .menu-item-has-children {
   position: relative;
