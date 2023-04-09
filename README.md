@@ -63,6 +63,7 @@
   <img src="assets/images/icons/Node.png" alt="NodeJS" height="40" style="">&nbsp;
   <img src="assets/images/icons/Express.png" alt="ExpressJS" height="40" style="">&nbsp;
   <img src="assets/images/icons/React.png" alt="ReactJS" height="40" style="">&nbsp;
+  <img src="assets/images/icons/Next.png" alt="NextJS" height="40" style="">&nbsp;
   <img src="assets/images/icons/Mongoose.png" alt="MongooseJS" height="40" style="">&nbsp;
   <img src="assets/images/icons/TypeScript.png" alt="TypeScript" height="40" style="">&nbsp;
   <img src="assets/images/icons/jQuery.png" alt="jQuery" height="40" style="">&nbsp;
