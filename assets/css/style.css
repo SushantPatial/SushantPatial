@@ -730,22 +730,22 @@ h6 {
 	content: "";
 }
 .skill-bars.active li:nth-child(1) .progress, .skill-bars.active li:nth-child(1) .counter {
-	animation: load85 3s normal forwards;
+	animation: load95 3s normal forwards;
 }
 .skill-bars.active li:nth-child(2) .progress, .skill-bars.active li:nth-child(2) .counter {
-	animation: load95 3s normal forwards;
+	animation: load90 3s normal forwards;
 }
 .skill-bars.active li:nth-child(3) .progress, .skill-bars.active li:nth-child(3) .counter {
 	animation: load90 3s normal forwards;
 }
 .skill-bars.active li:nth-child(4) .progress, .skill-bars.active li:nth-child(4) .counter {
-	animation: load75 3s normal forwards;
+	animation: load80 3s normal forwards;
 }
 .skill-bars.active li:nth-child(5) .progress, .skill-bars.active li:nth-child(5) .counter {
-	animation: load90 3s normal forwards;
+	animation: load75 3s normal forwards;
 }
 .skill-bars.active li:nth-child(6) .progress, .skill-bars.active li:nth-child(6) .counter {
-	animation: load75 3s normal forwards;
+	animation: load85 3s normal forwards;
 }
 
 @keyframes load70 {
@@ -1078,16 +1078,20 @@ h6 {
 	margin-bottom: 3px;
 	font-family: 'Open Sans', sans-serif;
 }
+.timeline .content a {
+	text-decoration: none;
+}
 .timeline .content h5 {
     color: var(--secondary);
 	font-weight: 400;
-	font-size: 16px;
-	margin-bottom: 12px;
+	font-size: 17px;
+	margin-bottom: 8px;
 }
 .timeline .content ul {
 	margin-left: -17px;
 	list-style-type: square;
 	text-align: justify;
+	font-size: 14px;
 }
 .timeline .content ul li {
 	margin: 5px 0;
@@ -1117,6 +1121,7 @@ h6 {
 .timeline .date span {
     color: #222222a4;
 	font-weight: 500;
+	font-size: 14px;
 }
 @media (min-width: 992px) {
     .timeline .date span {
